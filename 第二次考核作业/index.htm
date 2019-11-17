@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/shCore.css">
+    <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="li">
+<div class="nav">
+<ul>
+<li class="dot" onclick="currentSlide(1)">Curl</li>
+<li class="dot" onclick="currentSlide(2)">java</li>
+<li class="dot" onclick="currentSlide(3)">js</li>
+<li class="dot" onclick="currentSlide(4)">obj-c</li>
+<li class="dot" onclick="currentSlide(5)">swift</li>
+<li class="dot" onclick="currentSlide(6)">C#</li>
+<li class="dot" onclick="currentSlide(7)">python</li>
+<li class="dot" onclick="currentSlide(8)">php</li>
+</ul>
+</div> 
+<div class="mySlides fade">
+<script type="syntaxhighlighter" class="brush: js">
+        <![CDATA[// how to save a new object.
+curl -X POST
+  -H //X-LC-Id: {yourAppId}
+  -H //X-LC-Key: {yourAppKey}
+  -H //Content-Type: application/json
+  -d //{"content": "每个 Java 程序员必备的 8 个开发工具
+     }
+ 
+	 
+	 
+	 
+        ]]>
+    </script>
+	</div>
+	<div class="mySlides fade">
+	<script type="syntaxhighlighter" class="brush: js">
+        <![CDATA[AVObject post = new AVObject("Post");
+//post.put("content", "每个 Java 程序员必备的 8 个开发工具");
+//post.put("pubUser", "LeanCloud官方客服");
+//post.put("pubTimestamp", 1435541999);
+//post.saveInBackground();  // save to LeanCloud
+	  
+	        ]]>
+    </script>
+	
+  </div>
+ <div class="mySlides fade">
+ <script type="syntaxhighlighter" class="brush: js">
+        <![CDATA[var Post = AV.Object.extend('Post');
+// create a new post instance.
+var post = new Post();
+//post.set('content','每个 Java 程序员必备的 8 个开发工具');
+//post.set('pubUser', 'LeanCloud官方客服');
+//post.set('pubTimestamp',1435541999);
+//post.save().then(function (post) {
+  //console.log('objectId is ' + post.id);
+}, function (error) {
+  //console.error(error);
+});
+  ]]>
+  </script>
+  </div>
+  <div class="mySlides fade">
+  <script type="syntaxhighlighter" class="brush: js">
+  <![CDATA[AVObject *post = //[[AVObject alloc] initWithClassName:@"Post"];
+//post setObject:@"每个 Java 程序员必备的 8 个开发工具" forKey:@"content"];
+[//post setObject:@"LeanCloud官方客服" forKey:@"pubUser"];
+[//post setObject:@1435541999 forKey:@"pubTimestamp"];
+[//post saveInBackground];  // save to LeanCloud
+]]>
+  </script>
+  </div>
+   <div class="mySlides fade">
+  <script type="syntaxhighlighter" class="brush: js">
+  <![CDATA[let post = LCObject(className:// "Post")
+//post.set("content", value: "每个 Java 程序员必备
+//post.set("pubUser", value: "LeanCloud官方客服")
+//post.set("pubTimestamp", value: 1435541999)
+//post.save { result in
+  switch result {
+    case .success:
+      break
+    case .failure(let error):
+      //print(error)
+  }
+}
+ ]]>
+  </script>
+  </div>
+  <div class="mySlides fade">
+  <script type="syntaxhighlighter" class="brush: js">
+  <![CDATA[//AVObject post = new AVObject("Post");
+//post["content"] = "每个 Java 程序员必备的 8 个开发工具";
+//post["pubUser"] = "LeanCloud官方客服";
+//post["pubTimestamp"] = 1435541999;
+//Task saveTask = post.SaveAsync();
+/await saveTask;
+
+	        ]]>
+    </script>
+	
+  </div>
+  <div class="mySlides fade">
+  <script type="syntaxhighlighter" class="brush: js">
+  <![CDATA[import leancloud
+//Post = leancloud.Object.extend('Post')
+//post = Post()
+//post.set('pubUser', 'LeanCloud官方客服')
+//post.set('content', '每个 Java 程序员必备的 8 个开发工具')
+//post.set('pubTimestamp', 1435541999)
+post.save()
+   ]]>
+    </script>
+	
+  </div>
+  <div class="mySlides fade">
+  <script type="syntaxhighlighter" class="brush: js">
+  <![CDATA[use LeanCloudLeanObject;
+
+$post //= new LeanObject("Post");
+$post->set//('pubUser', 'LeanCloud官方客服');
+$post->set//('content', '每个 Java 程序员必备)
+$post->set//('pubTimestamp', 1435541999);
+try {
+  //$post->save();
+} catch (CloudException $ex) {
+  // handle exception.
+  ]]>
+    </script>
+	</div>
+  
+ <div class="mySlides fade">
+	<script type="syntaxhighlighter" class="brush: js">
+	<![CDATA[curl //-X GET
+  //-H "X-LC-Id: {yourAppId}"
+  //-H "X-LC-Key: {yourAppKey}"
+  //-H "Content-Type: application/json"
+https://zep7vtap.api.lncld.net/1.1/classes/Post
+]]>
+    </script>
+	</div>
+	 <div class="mySlides fade">
+	<script type="syntaxhighlighter" class="brush: js">
+	<![CDATA[//Map<String, String> dicParameters
+dicParameters.put(//"movie", "夏洛特烦恼");
+
+// call cloud function: averageStars
+//AVCloud.callFunctionInBackground
+  public void done(Object object, AVException e) {
+    if (e == null) {
+      //...
+    } else {
+      // handle exception
+});]]>
+    </script>
+	</div>
+	<div class="mySlides fade">
+	<script type="syntaxhighlighter" class="brush: js">
+	<![CDATA[var { TextMessage } = require('leancloud-realtime');
+realtime.createIMClient('Tom').then(function(tom) {
+  // create a conversation with members: tom and jerry.
+  return tom.createConversation({
+    m//embers: ['Jerry'],
+    //name: 'Tom & Jerry',
+  });
+}).//then(function(conversation) {
+]]>
+    </script>
+	</div>
+<div class="mySlides fade">
+	<script type="syntaxhighlighter" class="brush: js">
+	<![CDATA[// how to query leaderboard
+curl -X GET
+  -H //"X-LC-Id: {yourAppId}"
+  -H //"X-LC-Key: {yourAppMasterKey}"
+  ]]>
+    </script>
+	</div>
+</div>
+	<div class="touch">
+ <a class="dot" onclick="currentSlide(8)">数据模型与存储</a>
+ <a class="dot" onclick="currentSlide(9)">查询</a>
+ <a class="dot" onclick="currentSlide(10)">云引擎(Hook)</a>
+ <a class="dot" onclick="currentSlide(11)">即时通讯</a>
+ <a class="dot" onclick="currentSlide(12)">游戏对战</a>
+ <a class="button" href="https://leancloud.cn/docs/">查看更多开发文档</a>
+ </div>
+
+	
+	
+ 
+    <script type="text/javascript" src="js/XRegExp.js"></script>
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushJava.js"></script>
+    <script type="text/javascript" src="js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="js/shBrushSql.js"></script>
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+	<script type="text/javascript" src="js/indexlunbo.js"></script>
+</body>
+</html>
