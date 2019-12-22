@@ -22,26 +22,14 @@ body {
     position: relative;
     display: flex;
     margin: 0px auto;
-    width: 97%;
+    width: 95%;
     text-align:center;
-}
-.item{
-    font-size:25px;
-    font-weight:300;
 }
 
 .logo {
     width: auto;
     margin-top: 1px;
-    margin-right:6%;
-    vertical-align:middle;
-}
-.logo:hover{
-    text-decoration:none;
-}
-.logo img{
-    width:150px;
-    height:37px;
+    margin-left: 2%;
 }
 
 .name {
@@ -66,7 +54,7 @@ body {
     margin-top: 0px;
     margin-bottom: 0;
     margin-left: 2%;
-    width:99%;
+    width:95%;
 }
 
 ul {
@@ -184,7 +172,7 @@ li {
     position: fixed;
     right: -36px;
     z-index: 99999;
-    transform:rotate(-90deg);
+    transform: translateZ(0) rotate(-90deg);
     width:115px;
     height:40px;
     background-color:#0067b8;
@@ -198,14 +186,7 @@ li {
         margin-left:20%;
 
     }
-    .usabilla-button img{
-        width:15px;
-        height:15px;
-    }
-.evaluation-value {
-    width:300px;
-    height:150px;
-}
+
     .functioncontain h1 {
         display: block;
         color: #262626;
@@ -217,8 +198,7 @@ li {
     }
 
 .navall {
-    position:absolute; 
-    left:20%; 
+    position: relative;
     background-color: #F2F2F2;
     width: 60%;
     height: auto;
@@ -500,11 +480,6 @@ hr {
     flex-direction: row;
     filter: grayscale(100%);
 }
-.fa-stack{
-    position: relative;
-    top: 18px;
-    left: -15px;
-}
 .mySlides h1 {
     font-size: 44px;
     color: #FFFFFF;
@@ -577,6 +552,7 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
 }
+
     .workloadcontainer h1 {
         color: #222222;
         font-size: 24px;
@@ -758,7 +734,6 @@ hr {
     display: flex;
     flex-direction: row;
     z-index: 1;
-    left:0px;
 }
 
 .container {
@@ -902,11 +877,6 @@ hr {
 .moredata-contenter {
     display: flex;
     flex-direction: row;
-}
-.fa-content {
-    position:relative;
-    top:-20px; 
-    left:-15px;
 }
 
 .media {
@@ -1066,8 +1036,4 @@ hr {
     margin-top:50px;
     color:#fff;
     background-color:#0078D7;
-}
-.language-expand {
-    display:flex;
-    flex-direction:column-reverse;
 }
