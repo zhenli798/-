@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta a charset="utf-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background: url(http://pic.shejiben.com/caizhi/day_081215/a1bf4bfffd9a06e67a390af909d68f6d.jpg);
+        }
+        
+        #div1 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;
+            top: 30%;
+            background: black;
+            z-index: 20;
+        }
+        
+        #div2 {
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            background: black;
+            left: 50%;
+            top: 50%;
+            z-index: 999;
+        }
+        
+        #btn1 {
+            position: absolute;
+            top: 92%;
+            left: 2%;
+            color: chocolate;
+        }
+        
+        #barrier {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        #setting {
+            display: block;
+            position: absolute;
+            top: 55%;
+            left: 2%;
+            width: auto;
+        }
+        
+        #setting p {
+            color: chocolate;
+            font-size: 18px;
+            font-weight: 800;
+        }
+        
+        #setting input {
+            color: chocolate;
+        }
+        
+        #barrier div {
+            width: 100%;
+            margin-bottom: 10px;
+            z-index: 1;
+            background: chocolate;
+        }
+        
+        #score {
+            width: 20%;
+            text-align: center;
+            height: auto;
+            position: absolute;
+            top: 40%;
+            left: 2%;
+            font-size: 30px;
+            font-weight: 400;
+            z-index: 3;
+            color: red;
+            display: none;
+        }
+    </style>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/crash.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="barrier">
+    </div>
+    <input type="button" id="btn1" value="开始游戏">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="score"><span>当前得分：</span>
+        <span>0</span>
+    </div>
+    <div id="setting">
+        <p>小球垂直速度设置(推荐1~8)：</p>
+        <input type="text" id="speedY">
+        <p>小球水平速度设置（推荐1~8):</p>
+        <input type="text" id="speedX">
+        <p>小球大小设置(推荐50+)：</p>
+        <input type="text" id="scale">
+        <p>砖块数设置:</p>
+        <input type="text" id="sum">
+        <p>砖块长度设置：</p>
+        <input type="text" id="barrier_length">
+        <p>挡板长短设置(推荐150+)：</p>
+        <input type="text" id="board_length">
+        <input type="button" value="确定" id="enter">
+    </div>
+</body>
+
+</html>
